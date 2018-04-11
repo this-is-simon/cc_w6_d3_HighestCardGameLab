@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Card {
+
+    private SuitType suit;
+    private RankType rank;
+
+    public Card(SuitType suit, RankType rank){
+        this.suit = suit;
+        this.rank = rank;
+    }
+
+    public int getValueFromEnum() {
+        return this.rank.getValue();
+    }
+
+}
